@@ -20,16 +20,22 @@ int main()
 			else
 				z[i] = log(1 + 2 * z[i - 1] + z[i - 2] * z[i - 2]);
 		}
+
+		
+	}
+	for (j = 1; j <= m; j++)
+	{
 		r = 0;
-		t = abs(z[i] - 2.5);
-		for (j = 1; j <= m; j++)
+		
+		for (i = 0; i < n; i++)
 		{
+			t = abs(z[i] - 2.5);
 			if (t >= (j - 1) * h and t < j * h)
 				r++;
-
 		}
 		cout << r << endl;
 	}
+	
 	return 0;
 	system("pause");
 }
