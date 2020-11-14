@@ -11,7 +11,7 @@ int main()
 	{
 		if (i % a == b and i % c == d)
 		{
-			cout << i << " ";
+			cout << i << " "; 
 			t = true;
 		}
 	}
